@@ -20,7 +20,7 @@ header{
 }
 
 h1{
-    font-size: 45px;
+    font-size: 40px;
     font-family: 'Archivo', Helvetica, Arial, Lucida, sans-serif;
 
 }
@@ -30,7 +30,7 @@ h1,i{
 }
 
 i{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 aside{
@@ -40,14 +40,15 @@ aside{
     align-items: space-between;
     gap: 85px;
 
-    width: 50%;
+    width: 45%;
 
     text-align: center;
 }
 
 #section1 aside{
-    width: 35%;
+    margin-left: 5%;
 }
+
 
 #menu_header{
     margin-right: 8%;
@@ -85,12 +86,22 @@ aside{
 
     align-items: center;
 
-    gap: 25px;
+    gap: 50px;
 }
 
 #main_container section{
     background-color: white;
-    width: 70%;
+    width: 80%;
+
+    display: flex;
+
+    flex-direction: row;
+
+    gap: 10%;
+}
+
+#main_container p{
+    color: #3A4856;
 }
 
 .round{
@@ -99,5 +110,6 @@ aside{
 }
 
 section.round{
-    padding: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
