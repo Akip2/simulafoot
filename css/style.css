@@ -6,8 +6,6 @@ header{
 	top: 0;
 	left: 0;
 	z-index: 1000;
-    
-    color: white;
 
     display: flex;
     flex-direction: row;
@@ -18,12 +16,53 @@ header{
     padding-bottom: 1%;
 }
 
-h1{
+footer{
+    padding-left: 10%;
+    padding-right: 10%;
+
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+footer h1{
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+footer section{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+#footer_core{
+    margin-bottom: 32px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color:inherit;
+    text-decoration: inherit;
+}
+
+nav a{
+    transition: color 0.35s;
+}
+
+nav a:hover{
+    color: rgb(161, 196, 222);
+}
+
+#main_container h1, #feedback h1{
     text-transform: uppercase;
     font-size: 40px;
     font-family: 'Archivo', Helvetica, Arial, Lucida, sans-serif;
     margin-bottom: 85px;
-
 }
 
 #main_container h1, #main_container h2, i{
@@ -39,7 +78,7 @@ h1{
     margin-top: 50px;
 
     padding-top: 3%;
-    padding-bottom: 3%;
+    padding-bottom: 5%;
 }
 
 #feedback h1{
@@ -113,6 +152,26 @@ i{
     box-shadow: 0px 0px rgb(0,85,179);
 }
 
+.boxbutton_blue{
+    transition: color, background-color 0.35s, box-shadow 0.35s;
+
+    font-size: 20px;
+    color: white;
+    text-decoration: none; 
+    text-transform: uppercase;
+    border: 2px solid white; 
+
+    box-shadow: 12px 12px 2px 1px white;    
+    padding: 10px 20px; 
+    display:inline-block;
+}
+
+.boxbutton_blue:hover{
+    color: rgb(0,85,179);
+    background-color: white;
+    box-shadow: 0px 0px white;
+}
+
 aside{
     display: flex;
     flex-direction: column;
@@ -132,8 +191,7 @@ aside{
     margin-right: 8%;
 }
 
-#menu_header ul{
-    list-style: none;
+#menu_header ul, #menu_footer ul{
     display: flex;
     flex-direction: row;
     gap: 2vw;
@@ -142,8 +200,6 @@ aside{
 #menu_header a{
     font-size: 1vw;
     text-transform: uppercase;
-    color:inherit;
-    text-decoration: inherit;
 }
 
 
@@ -186,8 +242,6 @@ aside{
     width: 80%;
     display: flex;
     flex-direction: row;
-
-    gap: 3%;
 }
 
 #event_bottom div{
@@ -228,6 +282,14 @@ aside{
 
 .blue_bg{
     background-color: rgb(0,85,179);
+    color: white;
+}
+
+
+.default_horizontal_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 div.round{
