@@ -7,7 +7,6 @@ header{
 	left: 0;
 	z-index: 1000;
     
-    background-color: rgb(0,85,179);
     color: white;
 
     display: flex;
@@ -27,8 +26,66 @@ h1{
 
 }
 
-h1, h2, i{
+#main_container h1, #main_container h2, i{
     color:rgb(0,85,179);
+}
+
+#feedback{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+    margin-top: 50px;
+
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#feedback h1{
+    color:white;
+}
+
+#feedback_container{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    gap: 2%;
+}
+
+.feedback_box{
+    display:flex;
+    flex-direction: column;
+
+    text-align: left;
+    background-color: white;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 0.15rem black);
+
+    padding: 2%;
+
+    width: 30%;
+}
+
+.feedback_box q{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #3A4856;
+    font-size: 20px;
+}
+
+.feedback_box h2{
+    color:black;
+}
+
+.feedback_role{
+    color:rgb(0,85,179);
+}
+
+.feedback_date{
+    color:rgb(166,175,185);
 }
 
 i{
@@ -53,7 +110,6 @@ i{
 .boxbutton_white:hover{
     color: white;
     background-color: rgb(0,85,179);
-    box-shadow: white;  
     box-shadow: 0px 0px rgb(0,85,179);
 }
 
@@ -61,14 +117,13 @@ aside{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: space-between;
 
     width: 45%;
 
     text-align: center;
 }
 
-#section1 aside{
+#div1 aside{
     margin-left: 5%;
 }
 
@@ -112,7 +167,7 @@ aside{
     gap: 50px;
 }
 
-#main_container section{
+#main_container div{
     background-color: white;
     width: 80%;
 
@@ -162,13 +217,20 @@ aside{
     margin-bottom: 8px;
 }
 
-
 .round{
     border-radius: 30px;
     filter: drop-shadow(0 0 0.75rem black);
 }
 
-section.round{
+.gray_bg{
+    background-color: rgb(58,72,86);
+}
+
+.blue_bg{
+    background-color: rgb(0,85,179);
+}
+
+div.round{
     padding-top: 5%;
     padding-bottom: 5%;
 }
