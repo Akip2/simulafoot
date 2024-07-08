@@ -16,6 +16,59 @@ header{
     padding-bottom: 1%;
 }
 
+ul{
+    list-style: none;
+}
+
+a{
+    color:inherit;
+    text-decoration: inherit;
+}
+
+#menu_header{
+    margin-right: 8%;
+}
+
+#menu_header ul, #menu_footer ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+#menu_header a{
+    font-size: 1vw;
+    text-transform: uppercase;
+}
+
+nav a{
+    transition: color 0.35s;
+}
+
+nav a:hover{
+    color: rgb(161, 196, 222);
+}
+
+.dropdown_content{
+    background-color: rgb(0,85,179);
+    transition: opacity 0.35s;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+
+    visibility: hidden;
+    opacity: 0;
+
+    position: absolute;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown_content{
+    visibility: visible;
+    opacity: 1;
+}
+
 footer{
     padding-left: 10%;
     padding-right: 10%;
@@ -39,23 +92,6 @@ footer section{
 
 #footer_core{
     margin-bottom: 32px;
-}
-
-ul{
-    list-style: none;
-}
-
-a{
-    color:inherit;
-    text-decoration: inherit;
-}
-
-nav a{
-    transition: color 0.35s;
-}
-
-nav a:hover{
-    color: rgb(161, 196, 222);
 }
 
 #main_container h1, #feedback h1{
@@ -185,23 +221,6 @@ aside{
 #div1 aside{
     margin-left: 5%;
 }
-
-
-#menu_header{
-    margin-right: 8%;
-}
-
-#menu_header ul, #menu_footer ul{
-    display: flex;
-    flex-direction: row;
-    gap: 2vw;
-}
-
-#menu_header a{
-    font-size: 1vw;
-    text-transform: uppercase;
-}
-
 
 #logo_header{
     margin-left: 8%;
