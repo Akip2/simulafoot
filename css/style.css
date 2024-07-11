@@ -53,8 +53,12 @@ nav a:hover{
     transition: opacity 0.35s;
     display: flex;
     flex-direction: column;
-    gap: 25px;
 
+    text-wrap: wrap;
+
+    padding: 1%;
+
+    gap: 25px;
 
     visibility: hidden;
     opacity: 0;
@@ -62,6 +66,8 @@ nav a:hover{
     position: absolute;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+    max-width: 10%;
 }
 
 .dropdown:hover .dropdown_content{
@@ -314,4 +320,22 @@ aside{
 div.round{
     padding-top: 5%;
     padding-bottom: 5%;
+}
+
+.arrow {
+    transition: border-color 0.35s;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 2px;
+
+    margin-left: 8px;
+    margin-bottom: 2px;
+
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.dropdown:hover .arrow{
+    border-color: rgb(161, 196, 222);
 }
