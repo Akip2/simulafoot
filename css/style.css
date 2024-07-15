@@ -25,6 +25,11 @@ a{
     text-decoration: inherit;
 }
 
+p{
+    font-size: medium;
+    line-height:25px;
+}
+
 #menu_header{
     margin-right: 8%;
 }
@@ -96,6 +101,10 @@ footer section{
     gap: 20px;
 }
 
+footer .boxbutton_blue{
+    align-self: self-start;
+}
+
 #footer_core{
     margin-bottom: 32px;
 }
@@ -104,11 +113,14 @@ footer section{
     text-transform: uppercase;
     font-size: 40px;
     font-family: 'Archivo', Helvetica, Arial, Lucida, sans-serif;
-    margin-bottom: 85px;
+}   
+
+h1.high_marginB{
+    margin-bottom: 70px;
 }
 
-#main_container h1, #main_container h2, i{
-    color:rgb(0,85,179);
+h1.medium_marginB{
+    margin-bottom: 35px;
 }
 
 #feedback{
@@ -174,6 +186,8 @@ i{
 }
 
 .boxbutton_white{
+    align-self: center;
+    font-weight: bold;
     transition: color, background-color 0.35s, box-shadow 0.35s;
 
     font-size: 20px;
@@ -195,6 +209,8 @@ i{
 }
 
 .boxbutton_blue{
+    align-self: center;
+    font-weight: bold;
     transition: color, background-color 0.35s, box-shadow 0.35s;
 
     font-size: 20px;
@@ -214,14 +230,44 @@ i{
     box-shadow: 0px 0px white;
 }
 
+.boxbutton_gray{
+    align-self: center;
+    font-weight: bold;
+    transition: color, background-color 0.35s, box-shadow 0.35s;
+
+    font-size: 20px;
+    color: white;
+    text-decoration: none; 
+    text-transform: uppercase;
+    border: 2px solid white; 
+
+    box-shadow: 12px 12px 2px 1px white;    
+    padding: 10px 20px; 
+    display:inline-block;
+}
+
+.boxbutton_gray:hover{
+    color:#3A4856;
+    background-color: white;
+    box-shadow: 0px 0px white;
+}
+
+
 aside{
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
-    width: 45%;
+    width: 47%;
 
     text-align: center;
+}
+
+.baseline aside{
+    justify-content: baseline;
+}
+
+.center aside{
+    justify-content: center;
 }
 
 #div1 aside{
@@ -232,6 +278,7 @@ aside{
     margin-left: 8%;
     width: 250px;
     height: auto; 
+    cursor: pointer;
 }
 
 #main_video{
@@ -244,22 +291,21 @@ aside{
     flex-direction: column;
 
     align-items: center;
+    justify-content: center;
 
     gap: 50px;
 }
 
 #main_container div{
-    background-color: white;
     width: 80%;
 
     display: flex;
 
     flex-direction: row;
-
-    gap: 10%;
+    justify-content: space-between;
 }
 
-#main_container p, #event_bottom p{
+#event_bottom p{
     color: #3A4856;
 }
 
@@ -303,6 +349,7 @@ aside{
 
 .gray_bg{
     background-color: rgb(58,72,86);
+    color: white;
 }
 
 .blue_bg{
@@ -310,11 +357,33 @@ aside{
     color: white;
 }
 
+.white_bg{
+    background-color: white;
+    color:rgb(0,85,179);
+}
+
+.gray_txt{
+    color:#3A4856;
+}
+
+.blue_tit h1, .blue_tit h2{
+    color: rgb(0,85,179);
+}
 
 .default_horizontal_container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.default_vertical_container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.margin_top{
+    margin-top: 18em;
 }
 
 div.round{
@@ -338,4 +407,12 @@ div.round{
 
 .dropdown:hover .arrow{
     border-color: rgb(161, 196, 222);
+}
+
+.bottom_page{
+    padding-bottom: 5%;
+}
+
+.text_left{
+    text-align: left;
 }
