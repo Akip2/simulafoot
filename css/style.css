@@ -119,12 +119,13 @@ footer{
     margin-bottom: 32px;
 }
 
-#main_container h1, #feedback h1{
+#feedback h1{
     text-transform: uppercase;
     font-size: 40px;
+    color:white;
 }
 
-h1{
+h1, h2{
     font-family: 'Archivo', Helvetica, Arial, Lucida, sans-serif;
 }
 
@@ -146,10 +147,6 @@ h1{
 
     padding-top: 3%;
     padding-bottom: 5%;
-}
-
-#feedback h1{
-    color:white;
 }
 
 #feedback_container{
@@ -305,40 +302,53 @@ aside{
     justify-content: center;
 
     gap: 50px;
-}
 
-#main_container div{
-    width: 80%;
+    div{
+        width: 80%;
 
-    display: flex;
+        display: flex;
+    
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
-    flex-direction: row;
-    justify-content: space-between;
-}
+    h1, h2{
+        text-transform: uppercase;
+    }
 
-#event_bottom p{
-    color: #3A4856;
+    h1{
+        font-size: 40px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
 }
 
 #event_bottom{
     width: 80%;
     display: flex;
     flex-direction: row;
-}
 
-#event_bottom div{
-    display: flex;
-    flex-direction: column;
+    p{
+        color: #3A4856;
+    }
 
-    align-items: center;
+    div{
+        display: flex;
+        flex-direction: column;
+    
+        align-items: center;
+    
+        width: 30%;
+    
+        text-align: center;
+    }
 
-    width: 30%;
-
-    text-align: center;
-}
-
-#event_bottom h2{
-    margin-bottom: 8px;
+    h2{
+        margin-bottom: 8px;
+        text-transform: none;
+    }
 }
 
 #calendar_img{
