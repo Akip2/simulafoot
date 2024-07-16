@@ -32,6 +32,11 @@ p{
 
 #menu_header{
     margin-right: 8%;
+
+    a{
+        font-size: 1vw;
+        text-transform: uppercase;
+    }
 }
 
 #menu_header ul, #menu_footer ul{
@@ -40,17 +45,18 @@ p{
     gap: 2vw;
 }
 
-#menu_header a{
-    font-size: 1vw;
-    text-transform: uppercase;
-}
+nav{
+    a{
+        transition: color 0.35s;
+    }
+    
+    a:hover{
+        color: rgb(161, 196, 222);
+    }
 
-nav a{
-    transition: color 0.35s;
-}
-
-nav a:hover{
-    color: rgb(161, 196, 222);
+    a.current_page{
+        color: rgb(0,176,137);
+    }
 }
 
 .dropdown_content{
@@ -80,29 +86,33 @@ nav a:hover{
     opacity: 1;
 }
 
-footer{
+footer{ 
     padding-left: 10%;
     padding-right: 10%;
 
     padding-top: 1%;
     padding-bottom: 1%;
-}
 
-footer h1{
-    text-transform: uppercase;
-    font-size: 25px;
-}
+    h1{
+        text-transform: uppercase;
+        font-size: 25px;
+    }
 
-footer section{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+    section{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    
+        gap: 20px;
+    }
 
-    gap: 20px;
-}
+    .boxbutton_white{
+        align-self: self-start;
+    }
 
-footer .boxbutton_blue{
-    align-self: self-start;
+    .boxbutton_white:hover{
+        color:rgb(0,85,179);
+    }
 }
 
 #footer_core{
@@ -112,14 +122,17 @@ footer .boxbutton_blue{
 #main_container h1, #feedback h1{
     text-transform: uppercase;
     font-size: 40px;
-    font-family: 'Archivo', Helvetica, Arial, Lucida, sans-serif;
-}   
+}
 
-h1.high_marginB{
+h1{
+    font-family: 'Archivo', Helvetica, Arial, Lucida, sans-serif;
+}
+
+.high_marginB{
     margin-bottom: 70px;
 }
 
-h1.medium_marginB{
+.medium_marginB{
     margin-bottom: 35px;
 }
 
@@ -191,21 +204,20 @@ i{
     transition: color, background-color 0.35s, box-shadow 0.35s;
 
     font-size: 20px;
-    color: rgb(0,85,179);
+    color: white;
     text-decoration: none; 
     text-transform: uppercase;
-    border: 2px solid rgb(0,85,179); 
+    border: 2px solid white; 
 
-
-    box-shadow: 12px 12px 2px 1px rgb(0,85,179);    
+    box-shadow: 12px 12px 2px 1px white;    
     padding: 10px 20px; 
     display:inline-block;
 }
 
 .boxbutton_white:hover{
-    color: white;
-    background-color: rgb(0,85,179);
-    box-shadow: 0px 0px rgb(0,85,179);
+    color:#3A4856;
+    background-color: white;
+    box-shadow: 0px 0px white;
 }
 
 .boxbutton_blue{
@@ -214,20 +226,20 @@ i{
     transition: color, background-color 0.35s, box-shadow 0.35s;
 
     font-size: 20px;
-    color: white;
+    color: rgb(0,85,179);
     text-decoration: none; 
     text-transform: uppercase;
-    border: 2px solid white; 
+    border: 2px solid rgb(0,85,179); 
 
-    box-shadow: 12px 12px 2px 1px white;    
+    box-shadow: 12px 12px 2px 1px rgb(0,85,179);    
     padding: 10px 20px; 
     display:inline-block;
 }
 
 .boxbutton_blue:hover{
-    color: rgb(0,85,179);
-    background-color: white;
-    box-shadow: 0px 0px white;
+    color: white;
+    background-color: rgb(0,85,179);
+    box-shadow: 0px 0px rgb(0,85,179);
 }
 
 .boxbutton_gray{
@@ -236,22 +248,21 @@ i{
     transition: color, background-color 0.35s, box-shadow 0.35s;
 
     font-size: 20px;
-    color: white;
+    color: #3A4856;
     text-decoration: none; 
     text-transform: uppercase;
-    border: 2px solid white; 
+    border: 2px solid #3A4856;; 
 
-    box-shadow: 12px 12px 2px 1px white;    
+    box-shadow: 12px 12px 2px 1px #3A4856;;    
     padding: 10px 20px; 
     display:inline-block;
 }
 
 .boxbutton_gray:hover{
-    color:#3A4856;
-    background-color: white;
-    box-shadow: 0px 0px white;
+    color: white;
+    background-color: #3A4856;
+    box-shadow: 0px 0px #3A4856;
 }
-
 
 aside{
     display: flex;
@@ -370,6 +381,10 @@ aside{
     color: rgb(0,85,179);
 }
 
+.gray_tit h1, .gray_tit h2{
+    color:#3A4856;
+}
+
 .default_horizontal_container{
     display: flex;
     flex-direction: row;
@@ -415,4 +430,18 @@ div.round{
 
 .text_left{
     text-align: left;
+}
+
+#gradiant_box{
+    background: rgb(0,176,136);
+    background: linear-gradient(0deg, rgba(0,176,136,1) 0%, rgba(12,114,195,1) 50%);
+
+    color: white;
+    text-transform: uppercase;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-bottom: 1%;
+    font-size: large;
+
+    margin-bottom: 12em;
 }
