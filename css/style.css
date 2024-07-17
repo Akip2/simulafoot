@@ -5,7 +5,7 @@ header{
     position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 1000;
+	z-index: 999;
 
     display: flex;
     flex-direction: row;
@@ -312,6 +312,19 @@ aside{
         justify-content: space-between;
     }
 
+    figure.audio{
+        width: 56%;
+        padding: 2%;
+    }
+
+    figure.picture{
+        width: 60%;
+
+        img{
+            width: 100%;
+        }
+    }
+    
     h1, h2{
         text-transform: uppercase;
     }
@@ -323,6 +336,60 @@ aside{
     h2{
         font-size: 30px;
     }
+}
+
+figure{
+    transition: background-color 0.3s;
+    border-radius: 30px;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+
+    audio{
+        width: 90%;
+    }
+}
+
+figure.audio{
+    background-color: rgb(0,85,179);
+    border: rgb(12,113,195) solid medium;
+
+    figcaption{
+        font-size: 1.65em;
+
+        font-weight: bold;
+        color: white;
+
+        margin-bottom: 2%;
+    }
+}
+
+figure.audio:hover{
+    background-color: rgb(44,132,202);
+}
+
+figure.picture{
+    figcaption{
+        margin-bottom: 2%;
+        font-size: 1.2em;
+    }
+}
+
+.brochure{
+    transition: color, filter 0.25s ease-in-out, box-shadow 0.25s;
+
+    border: medium solid rgb(0,85,179); 
+    border-radius: 30px;
+
+    box-shadow: 12px 12px 2px 1px rgb(0,85,179);
+
+    cursor: pointer;
+}
+
+.brochure:hover{
+    box-shadow: 0px 0px 0px 0px rgb(0,85,179);
+    filter: invert(21%) sepia(84%) saturate(150%) hue-rotate(200deg) brightness(110%) contrast(102%);
 }
 
 #event_bottom{
@@ -454,4 +521,39 @@ div.round{
     font-size: large;
 
     margin-bottom: 12em;
+}
+
+#presse_p{
+    font-size: large;
+    width: 60%;
+    text-align: center;
+}
+
+#article_lightbox{
+    transition: opacity 0.35s;
+
+    visibility:hidden;
+    opacity: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position:fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    padding-left: 25%;
+    padding-right: 25%;
+        
+    background: rgba(39, 39, 39, 0.9);
+    backdrop-filter: blur(5px);
+
+
+    img{
+        height: 95%;
+    }
 }
