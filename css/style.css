@@ -30,6 +30,10 @@ p{
     line-height:25px;
 }
 
+em{
+    font-style: normal;
+}
+
 #menu_header{
     margin-right: 8%;
 
@@ -191,10 +195,6 @@ h1, h2{
     color:rgb(166,175,185);
 }
 
-i{
-    font-size: 18px;
-}
-
 .boxbutton_white{
     align-self: center;
     font-weight: bold;
@@ -330,11 +330,11 @@ aside{
     }
 
     h1{
-        font-size: 40px;
+        font-size: 2.5em;
     }
 
     h2{
-        font-size: 30px;
+        font-size: 2em;
     }
 }
 
@@ -454,6 +454,10 @@ figure.picture{
     color:#3A4856;
 }
 
+.blue_txt{
+    color: rgb(0,85,179);
+}
+
 .blue_tit h1, .blue_tit h2{
     color: rgb(0,85,179);
 }
@@ -509,6 +513,10 @@ div.round{
     text-align: left;
 }
 
+.text_center{
+    text-align: center;
+}
+
 #gradiant_box{
     background: rgb(0,176,136);
     background: linear-gradient(0deg, rgba(0,176,136,1) 0%, rgba(12,114,195,1) 50%);
@@ -555,5 +563,77 @@ div.round{
 
     img{
         height: 95%;
+    }
+}
+
+.medium_font{
+    font-size: 1.25em;
+}
+
+.big_font{
+    font-size: 1.5em;
+}
+
+#formule_section{
+    display: flex;
+    flex-direction: row;
+
+    img{
+        width: 45%;
+        height: auto;
+    }
+
+    #formule_info{
+        display: flex;
+        flex-direction: column;
+
+        justify-content: space-between;
+
+        width: 55%;
+        padding-left: 5%;
+        padding-right: 1%;
+
+        padding-top: 3%;
+        padding-bottom: 3%;
+
+        h2, h3, h4{
+            text-transform: uppercase;
+        }
+
+        h2{
+            font-style: italic;
+            color: rgb(0,176,136);
+
+            font-size:2.25em;
+        }
+
+        h3{
+            font-size:1.5em;
+
+            font-weight: 550;
+        }
+
+        h4{
+            font-size: 1.35em;
+            margin-bottom: 1em;
+        }
+
+        ul{
+            list-style: initial;
+            padding-left: 3%;
+        }
+
+        li{
+            margin-top: 1em;
+        }
+
+        section{
+            padding: 2%;
+            border: white solid medium;
+        }
+
+        .boxbutton_white{
+            align-self: self-start;
+        }
     }
 }
