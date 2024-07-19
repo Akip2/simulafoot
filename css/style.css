@@ -129,7 +129,7 @@ footer{
     color:white;
 }
 
-h1, h2{
+h1, h2, h3{
     font-family: 'Archivo', Helvetica, Arial, Lucida, sans-serif;
 }
 
@@ -204,7 +204,7 @@ h1, h2{
     color: white;
     text-decoration: none; 
     text-transform: uppercase;
-    border: 2px solid white; 
+    border: medium solid white; 
 
     box-shadow: 12px 12px 2px 1px white;    
     padding: 10px 20px; 
@@ -226,7 +226,7 @@ h1, h2{
     color: rgb(0,85,179);
     text-decoration: none; 
     text-transform: uppercase;
-    border: 2px solid rgb(0,85,179); 
+    border: medium solid rgb(0,85,179); 
 
     box-shadow: 12px 12px 2px 1px rgb(0,85,179);    
     padding: 10px 20px; 
@@ -248,7 +248,7 @@ h1, h2{
     color: #3A4856;
     text-decoration: none; 
     text-transform: uppercase;
-    border: 2px solid #3A4856;; 
+    border: medium solid #3A4856;; 
 
     box-shadow: 12px 12px 2px 1px #3A4856;;    
     padding: 10px 20px; 
@@ -294,7 +294,7 @@ aside{
 }
 
 #main_container{
-    margin-top: -125px;
+    margin-top: -145px;
     display: flex;
     flex-direction: column;
 
@@ -303,13 +303,17 @@ aside{
 
     gap: 50px;
 
-    div{
-        width: 80%;
-
+    #faq_container{
         display: flex;
-    
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+
+        justify-content:baseline;
+
+        gap:1.5em;
+
+        .boxbutton_blue{
+            align-self: self-start;
+        }
     }
 
     figure.audio{
@@ -336,6 +340,19 @@ aside{
     h2{
         font-size: 2em;
     }
+
+    h2#faq_title{
+        font-size:1.5em;
+    }
+}
+
+#main_container > div{
+    width: 80%;
+
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 figure{
@@ -490,23 +507,40 @@ div.round{
 .arrow {
     transition: border-color 0.35s;
     border: solid white;
-    border-width: 0 2px 2px 0;
+
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
     display: inline-block;
+}
+
+.arrow.up{
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.dropdown .arrow{
+    border-width: 0 2px 2px 0;
+    
     padding: 2px;
 
     margin-left: 8px;
     margin-bottom: 2px;
-
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
 }
 
 .dropdown:hover .arrow{
     border-color: rgb(161, 196, 222);
 }
 
+.faq_question .arrow
+{
+    border-width: 0 4px 4px 0;
+    
+    padding: 4px;
+    border-color: rgb(0,85,179);
+}
+
 .bottom_page{
-    padding-bottom: 5%;
+    padding-bottom: 6em;
 }
 
 .text_left{
@@ -636,4 +670,51 @@ div.round{
             align-self: self-start;
         }
     }
+}
+
+.faq_question{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    border: rgb(0,85,179) solid medium;
+    padding: 1% 2%;
+
+    h3{
+        text-transform: uppercase;
+        font-size: 1.5em;
+    }
+}
+
+.faq_question_header{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.faq_answer{
+    display: none;
+    font-weight: 500;
+    flex-direction: column;
+
+    gap: 1em;
+
+    a{
+        color: rgb(46,181,242);
+    }
+
+    ul{
+        list-style: initial;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding-left: 2em;
+    }
+}
+
+.opened .faq_answer{
+    display: flex;
 }
