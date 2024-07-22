@@ -513,7 +513,7 @@ div.round{
     display: inline-block;
 }
 
-.arrow.up{
+.opened .arrow{
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
 }
