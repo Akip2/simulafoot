@@ -43,7 +43,7 @@ function submit(event){
 }
 
 function sendEmail(formValues){
-    emailjs.send('service_simulafoot', 'template_simulafoot', formValues, 'yB4zkUW-WZvgXz_5M')
+    emailjs.send('service_simulafoot', 'simulafoot_feedback', formValues, 'yB4zkUW-WZvgXz_5M')
     .then((response) => {
         callback.innerText="Merci pour votre avis !";
     }, (err) => {
