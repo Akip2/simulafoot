@@ -5,10 +5,7 @@
         <link rel="stylesheet" href="css/style.css"> 
         <link rel="stylesheet" href="css/fonts.css">
 
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-        <script type="module" src="js/feedback.js"></script>
-
-        <title>Avis et témoignages | Simulafoot</title>
+        <title>Animations | Simulafoot</title>
     </head>
 
     <body>
@@ -30,7 +27,7 @@
                         <a href="animations.html">Nos prestations<div class="arrow"></div></a>
 
                         <div class="dropdown_content">
-                            <a href="animations.html">Animations</a>
+                            <a href="animations.html" class="current_page">Animations</a>
                             <a href="">FAQ</a>
                         </div>
                     </li>
@@ -40,7 +37,7 @@
                         
                         <div class="dropdown_content">
                             <a href="">Nos actualités</a>
-                            <a href="" class="current_page">Avis et témoignages</a>
+                            <a href="">Avis et témoignages</a>
                         </div>
                     </li>
 
@@ -49,57 +46,24 @@
             </nav>
         </header>
 
-
-        <div id="avis_top">
-            <section>
-                <h1>Avis et témoignages</h1>
-                <h2 class="text_center">Ce que vous dites de nous.</h2>
-            </section>
-
-            <div id="feedback_container">
-                <div class="feedback_box">
-                    <h2>Louis P.</h2>
-                    <p class="feedback_role">Testeur</p>
-                    <q> Jeu simple, efficace, très intéressant et qui offre plus de possibilités que le baby-foot. </q>
-                    <p class="feedback_date">Février 2022</p>
-                </div>
-
-                <div class="feedback_box">
-                    <h2>Sarah M.</h2>
-                    <p class="feedback_role">Testeur</p>
-                    <q> Un jeu original et facile à prendre en main ! </q>
-                    <p class="feedback_date">Février 2022</p>
-                </div>
-
-                <div class="feedback_box">
-                    <h2>Alexandre C.</h2>
-                    <p class="feedback_role">Testeur</p>
-                    <q> Une grande liberté de jeu qui offre de multiple combinaisons possibles. </q>
-                    <p class="feedback_date">Juillet 2022</p>
-                </div>
-            </div>
+        <div id="gradiant_box">
+            <h1>Demander un devis</h1>
         </div>
 
-        <div id="feedback_sender" class="gray_bg">
-            <h3 class="medium_marginB">Donnez nous votre avis !</h3>
-            
-            <form id="feedback_form" method="post">
-                <div>
-                    <input type="text" value="" name="name" data-required_mark="required" data-field_type="input" placeholder="Nom *">
-                    <input type="text" value="" name="surname" data-required_mark="required" data-field_type="input" placeholder="Prénom *">
-                </div>
+        <div id="main_container" class="gray_txt bottom_page">
+            <div>
+                <aside>
+                    <img src="img/contact_1.png" alt="Simulafoot">
+                </aside>
 
-                <div>
-                    <input type="email" value="" name="email" data-required_mark="required" data-field_type="input" placeholder="Adresse mail *">
-                    <input type="text" value="" name="occupation" data-field_type="input" placeholder="Occupation">
-                </div>
+                <aside class="text_left">
+                    <p>Pour toute demande de devis ou question, contactez-nous et nous vous répondrons dans les meilleurs délais !</p>
 
-                <textarea name="message" data-required_mark="required" data-field_type="text" placeholder="Donnez nous votre avis ! nous nous ferrons un plaisir de le partager sur le site !"></textarea>
-                
-                <p id="callback" class="text_center"></p>
-                
-                <button type="submit" class="boxbutton_white">Envoyer</button>
-            </form>
+                    <form>
+                        <input type="text" value="" name="name_surname" data-required_mark="required" data-field_type="input" placeholder="Nom et Prénom *">
+                    </form>
+                </aside>
+            </div>
         </div>
 
         <footer class="blue_bg">

@@ -1,3 +1,5 @@
+import { sendEmail } from "./emailSender.js";
+
 let callback
 document.addEventListener("DOMContentLoaded", (event) => {
     let form=document.getElementById('feedback_form');
@@ -12,11 +14,7 @@ function submit(event){
     let form=event.target;
 
     let formData = new FormData(form);
-    let formValues = Object.fromEntries(formData.entries());
-    formValues.name=formValues.name.toUpperCase();
-
-    console.log(formValues);
-
+    
     let requiredFields = document.querySelectorAll('[data-required_mark="required"]');
 
     let allfilled=true;
@@ -35,20 +33,9 @@ function submit(event){
         form.reset();
 
         callback.innerText="Envoi en cours...";
-        sendEmail(formValues);
+        sendEmail("send_feedback.php", formData);
     }
     else{
         callback.innerText="Veuillez remplir les champs requis.";
     }
-}
-
-function sendEmail(formValues){
-    emailjs.send('service_simulafoot', 'simulafoot_feedback', formValues, 'yB4zkUW-WZvgXz_5M')
-    .then((response) => {
-        callback.innerText="Merci pour votre avis !";
-    }, (err) => {
-        callback.innerText="Une erreur est survenue lors de l'envoi de l'avis. Veuillez réessayer plus tard.";
-
-        console.log(err);
-    });
 }
