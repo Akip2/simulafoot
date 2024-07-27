@@ -3,7 +3,7 @@ let headerStatus=0;
 document.addEventListener("DOMContentLoaded", (event) => {
     fetch('header.html').then(response => response.text())
     .then(data => {
-        document.body.innerHTML=data+document.body.innerHTML;
+        document.body.querySelector("#header").innerHTML=data;
         headerStatus=1;
     })
     .catch(error => {
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     fetch('footer.html').then(response => response.text())
     .then(data => {
-        document.body.innerHTML+=data;
+        document.body.querySelector("#footer").innerHTML=data;
     })
     .catch(error => console.error('Erreur de chargement du footer:', error));
 });
