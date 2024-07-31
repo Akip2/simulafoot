@@ -384,13 +384,22 @@ aside{
     }
 }
 
-#main_container > div{
+#main_container:not(.legal_page) > div{
     width: 80%;
 
     display: flex;
 
     flex-direction: row;
     justify-content: space-between;
+}
+
+#main_container.legal_page > div{
+    width: 80%;
+    display: column;
+
+    align-items: self-start;
+
+    margin-top: -1em;
 }
 
 figure{
