@@ -5,12 +5,18 @@
         <link rel="stylesheet" href="css/style.css"> 
         <link rel="stylesheet" href="css/fonts.css">
 
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+        
+        <script src="https://kit.fontawesome.com/63da93037c.js" crossorigin="anonymous"></script>
+
+        <script src="js/contact.js"></script>
+
         <script src="js/default.js"></script>
         <script>
             markCurrentPage("demander-un-devis");
         </script>
 
-        <title>Animations | Simulafoot</title>
+        <title>Demander un devis | Simulafoot</title>
     </head>
 
     <body>
@@ -22,17 +28,89 @@
 
         <div id="main_container" class="gray_txt bottom_page">
             <div>
-                <aside>
+                <aside class="baseline">
                     <img src="img/contact_1.png" alt="Simulafoot">
                 </aside>
 
-                <aside class="text_left">
-                    <p>Pour toute demande de devis ou question, contactez-nous et nous vous répondrons dans les meilleurs délais !</p>
+                <aside class="text_left baseline">
+                    <form class="default_vertical_container" id="devis_form">
+                        <p><b>Pour toute demande de devis ou question, contactez-nous et nous vous répondrons dans les meilleurs délais !</b></p>
 
-                    <form>
                         <input type="text" value="" name="name_surname" data-required_mark="required" data-field_type="input" placeholder="Nom et Prénom *">
+                        <input type="text" value="" name="address" data-field_type="input" placeholder="Adresse complète">
+
+                        <div>
+                            <input type="text" value="" name="postal_code" data-field_type="input" placeholder="Code postal">
+                            <input type="text" value="" name="city" data-field_type="input" placeholder="Ville">
+                        </div>
+
+                        <input type="email" value="" name="email" data-required_mark="required" data-field_type="input" placeholder="Adresse mail *">
+
+                        <div>
+                            <input type="text" value="" name="phone" data-field_type="input" placeholder="Numéro de téléphone">
+                            <input type="text" value="" name="company" data-field_type="input" placeholder="Société">
+                        </div>
+
+                        <p>Vous êtes :</p>
+
+                        <ul class="blue_txt" id="status_list">
+                            <li>
+                                <input type="radio" value="particulier" name="status">
+                                <label for="status">Un particulier</label>
+                            </li>
+
+                            <li>
+                                <input type="radio" value="entreprise" name="status">
+                                <label for="status">Une entreprise</label>
+                            </li>
+
+                            <li>
+                                <input type="radio" value="association" name="status">
+                                <label for="status">Une association</label>
+                            </li>
+
+                            <li>
+                                <input type="radio" value="collectivité" name="status">
+                                <label for="status">Une collectivité locale</label>
+                            </li>
+
+                            <li>
+                                <input type="radio" value="bar / restaurant" name="status">
+                                <label for="status">Un bar / restaurant</label>
+                            </li>
+
+                            <li>
+                                <input type="radio" value="espace de loisir" name="status">
+                                <label for="status">Un espace de loisir</label>
+                            </li>
+
+                            <li>
+                                <input type="radio" value="autre" name="status">
+                                <label for="status">Autre</label>
+                            </li>
+                        </ul>
+
+                        <textarea name="message" data-required_mark="required" data-field_type="text" placeholder="Tapez ici votre message, nous sommes à votre disposition !"></textarea>
+
+                        <p class="text_center" id="callback"></p>
+
+                        <button type="submit" class="boxbutton_blue">Envoyer</button>
                     </form>
                 </aside>
+            </div>
+
+            <div id="contact_block" class="blue_tit">
+                <h2>Retrouvez nous sur les réseaux sociaux !</h2>
+
+                <div>
+                    <a href="https://www.facebook.com/simulafoot/" class="fa fa-facebook boxbutton_blue" target="_blank" rel="noopener noreferrer"></a>
+                    <a href="https://www.linkedin.com/in/florian-fontanez-47a6b2122/?originalSubdomain=fr" class="fa fa-linkedin boxbutton_blue" target="_blank" rel="noopener noreferrer"></a>
+                    <a href="https://x.com/simulafoot" class="fa-brands fa-x-twitter boxbutton_blue" target="_blank" rel="noopener noreferrer"></a>
+                </div>
+    
+                <h2>Ou par téléphone en nous contactant au :</h2>
+    
+                <p>06 37 05 05 40</p>
             </div>
         </div>
 

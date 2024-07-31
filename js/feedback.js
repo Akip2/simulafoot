@@ -12,6 +12,7 @@ function submit(event){
     let form=event.target;
 
     let formData = new FormData(form);
+    const formObject = Object.fromEntries(formData);
     
     let requiredFields = document.querySelectorAll('[data-required_mark="required"]');
 
@@ -34,15 +35,15 @@ function submit(event){
 
         let content= 
         `
-            <p><b>Nom</b> : ${formData.name}</p>
-            <p><b>Prénom</b> : ${formData.surname}</p>
-            <p><b>Email</b> : ${formData.email}</p>
-            <p><b>Occuption</b> : ${formData.occupation}</p>
-            <p><b>Avis</b> : ${formData.message}</p>
+            <p><b>Nom</b> : ${formObject.name}</p>
+            <p><b>Prénom</b> : ${formObject.surname}</p>
+            <p><b>Email</b> : ${formObject.email}</p>
+            <p><b>Occuption</b> : ${formObject.occupation}</p>
+            <p><b>Avis</b> : ${formObject.message}</p>
         `;
 
         mailData.append("to", "florian.fontanez7@gmail.com");
-        mailData.append("subject", `Avis de ${formData.surname} ${formData.name}`);
+        mailData.append("subject", `Avis de ${formObject.surname} ${formObject.name}`);
         mailData.append("content", content);
 
         sendEmail(mailData);

@@ -347,6 +347,41 @@ aside{
     h2#faq_title{
         font-size:1.5em;
     }
+
+    #contact_block{
+        display: flex;
+        flex-direction: column;
+        gap: 0.65em;
+
+        h2{
+            font-size: 1.5em;
+        }
+
+        p{
+            font-weight: 550;
+            font-style: italic;
+
+            font-size: 1.25em;
+        }
+
+        a{
+            padding: 0.5% 0.75%;
+            font-size: 1em;
+
+            margin-right: 1.5%;
+
+            box-shadow: 8px 8px 2px 1px rgb(0,85,179);    
+        }
+
+        .boxbutton_blue:hover{
+            box-shadow: 0px 0px 0px 0px;    
+        }
+
+        div{
+            margin-bottom: 1em;
+            margin-top: 0.5em;
+        }
+    }
 }
 
 #main_container > div{
@@ -495,7 +530,7 @@ figure.picture{
 .default_vertical_container{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 0.75em;
 }
 
 .margin_top{
@@ -766,6 +801,11 @@ div.round{
     }
 }
 
+textarea:focus, input:focus{
+    outline: none;
+    background-color: rgb(255, 255, 255);
+}
+
 #feedback_sender{
     display: flex;
     flex-direction: column;
@@ -801,7 +841,6 @@ div.round{
     }
 
     textarea, input{
-        
         padding: 1.25% 2%;
 
         border-radius: 10px;
@@ -810,11 +849,6 @@ div.round{
         filter: drop-shadow(0 0 0.25rem black);
 
         background-color: rgb(245, 245, 245);
-    }
-
-    textarea:focus, input:focus{
-        outline: none;
-        background-color: rgb(255, 255, 255);
     }
 
     .unfilled_input{
@@ -830,4 +864,73 @@ button{
     all: unset;
     display: inline-block;
     cursor: pointer;
+}
+
+#devis_form{
+    input[type=text], input[type=email]{
+        all: unset;
+        color:black;
+
+        border-bottom: rgb(0,85,179) solid 2px;
+        padding: 2%;
+    }
+
+    textarea{
+        padding: 2%;
+        border: rgb(0,85,179) solid, medium;
+
+        font-size: medium;
+
+        height: 5em;
+    }
+
+    input[type=radio]{
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    ::placeholder{
+        color:rgb(0,85,179);
+        font-family: "Roboto",Arial, Helvetica, sans-serif;
+
+        font-style: italic;
+        font-weight: 550;
+    }
+
+    div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        input[type=text], input[type=email]{
+            width: 44%;
+        }
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 0.35em;
+
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    li{
+        display: flex;
+        flex-direction: row;
+
+        align-items: center;
+
+        gap:0.5em;
+    }
+
+    input.unfilled_input, .unfilled_input{
+        background-color: rgb(255, 174, 174);
+    }
+
+    textarea:focus, input:focus{
+        outline: none;
+        background-color: rgb(255, 255, 255);
+    }
 }
