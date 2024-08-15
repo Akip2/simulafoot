@@ -10,8 +10,8 @@
         <script>
             markCurrentPage("avis-et-temoignages");
         </script>
-
-        <script src="js/feedback.js"></script>
+        
+        <script src="js/feedback.js" type="module"></script>
         
         <title>Avis et témoignages | Simulafoot</title>
     </head>
@@ -52,18 +52,18 @@
         <div id="feedback_sender" class="gray_bg">
             <h3 class="medium_marginB">Donnez nous votre avis !</h3>
             
-            <form id="feedback_form" method="post">
+            <form id="feedback_form">
                 <div>
-                    <input type="text" value="" name="name" data-required_mark="required" data-field_type="input" placeholder="Nom *">
-                    <input type="text" value="" name="surname" data-required_mark="required" data-field_type="input" placeholder="Prénom *">
+                    <input type="text" value="" name="Nom" data-required_mark="required" data-field_type="input" placeholder="Nom *">
+                    <input type="text" value="" name="Prénom" data-required_mark="required" data-field_type="input" placeholder="Prénom *">
                 </div>
 
                 <div>
-                    <input type="email" value="" name="email" data-required_mark="required" data-field_type="input" placeholder="Adresse mail *">
-                    <input type="text" value="" name="occupation" data-field_type="input" placeholder="Occupation">
+                    <input type="email" value="" name="Email" data-required_mark="required" data-field_type="input" placeholder="Adresse mail *">
+                    <input type="text" value="" name="Occupation" data-field_type="input" placeholder="Occupation">
                 </div>
 
-                <textarea name="message" data-required_mark="required" data-field_type="text" placeholder="Donnez nous votre avis ! nous nous ferrons un plaisir de le partager sur le site !"></textarea>
+                <textarea name="Message" data-required_mark="required" data-field_type="text" placeholder="Donnez nous votre avis ! nous nous ferrons un plaisir de le partager sur le site !"></textarea>
                 
                 <p id="callback" class="text_center"></p>
                 

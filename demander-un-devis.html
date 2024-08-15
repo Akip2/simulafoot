@@ -8,7 +8,7 @@
         
         <script src="https://kit.fontawesome.com/63da93037c.js" crossorigin="anonymous"></script>
 
-        <script src="js/contact.js"></script>
+        <script src="js/contact.js" type="module"></script>
 
         <script src="js/default.js"></script>
         <script>
@@ -35,61 +35,61 @@
                     <form class="default_vertical_container" id="devis_form">
                         <p><b>Pour toute demande de devis ou question, contactez-nous et nous vous répondrons dans les meilleurs délais !</b></p>
 
-                        <input type="text" value="" name="name_surname" data-required_mark="required" data-field_type="input" placeholder="Nom et Prénom *">
-                        <input type="text" value="" name="address" data-field_type="input" placeholder="Adresse complète">
+                        <input type="text" value="" name="Nom et Prénom" data-required_mark="required" data-field_type="input" placeholder="Nom et Prénom *">
+                        <input type="text" value="" name="Adresse" data-field_type="input" placeholder="Adresse complète">
 
                         <div>
-                            <input type="text" value="" name="postal_code" data-field_type="input" placeholder="Code postal">
-                            <input type="text" value="" name="city" data-field_type="input" placeholder="Ville">
+                            <input type="text" value="" name="Code postal" data-field_type="input" placeholder="Code postal">
+                            <input type="text" value="" name="Ville" data-field_type="input" placeholder="Ville">
                         </div>
 
-                        <input type="email" value="" name="email" data-required_mark="required" data-field_type="input" placeholder="Adresse mail *">
+                        <input type="email" value="" name="Email" data-required_mark="required" data-field_type="input" placeholder="Adresse mail *">
 
                         <div>
-                            <input type="text" value="" name="phone" data-field_type="input" placeholder="Numéro de téléphone">
-                            <input type="text" value="" name="company" data-field_type="input" placeholder="Société">
+                            <input type="text" value="" name="Téléphone" data-field_type="input" placeholder="Numéro de téléphone">
+                            <input type="text" value="" name="Société" data-field_type="input" placeholder="Société">
                         </div>
 
                         <p>Vous êtes :</p>
 
                         <ul class="blue_txt" id="status_list">
                             <li>
-                                <input type="radio" value="particulier" name="status">
+                                <input type="radio" value="particulier" name="Statut">
                                 <label for="status">Un particulier</label>
                             </li>
 
                             <li>
-                                <input type="radio" value="entreprise" name="status">
+                                <input type="radio" value="entreprise" name="Statut">
                                 <label for="status">Une entreprise</label>
                             </li>
 
                             <li>
-                                <input type="radio" value="association" name="status">
+                                <input type="radio" value="association" name="Statut">
                                 <label for="status">Une association</label>
                             </li>
 
                             <li>
-                                <input type="radio" value="collectivité" name="status">
+                                <input type="radio" value="collectivité" name="Statut">
                                 <label for="status">Une collectivité locale</label>
                             </li>
 
                             <li>
-                                <input type="radio" value="bar / restaurant" name="status">
+                                <input type="radio" value="bar / restaurant" name="Statut">
                                 <label for="status">Un bar / restaurant</label>
                             </li>
 
                             <li>
-                                <input type="radio" value="espace de loisir" name="status">
+                                <input type="radio" value="espace de loisir" name="Statut">
                                 <label for="status">Un espace de loisir</label>
                             </li>
 
                             <li>
-                                <input type="radio" value="autre" name="status">
+                                <input type="radio" value="autre" name="Statut">
                                 <label for="status">Autre</label>
                             </li>
                         </ul>
 
-                        <textarea name="message" data-required_mark="required" data-field_type="text" placeholder="Tapez ici votre message, nous sommes à votre disposition !"></textarea>
+                        <textarea name="Message" data-required_mark="required" data-field_type="text" placeholder="Tapez ici votre message, nous sommes à votre disposition !"></textarea>
 
                         <p class="text_center" id="callback"></p>
 

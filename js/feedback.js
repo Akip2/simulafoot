@@ -1,3 +1,5 @@
+import { sendEmail } from "./emailSender.js";
+
 let callback
 document.addEventListener("DOMContentLoaded", (event) => {
     let form=document.getElementById('feedback_form');
@@ -6,7 +8,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     form.addEventListener('submit', submit);
 });
 
-function submit(event){
+async function submit(event){
     event.preventDefault();
     
     let form=event.target;
@@ -31,46 +33,21 @@ function submit(event){
     if(allfilled){
         form.reset();
 
-        let mailData=new FormData();
+        let subject=`Avis de ${formObject["Prénom"]} ${formObject["Nom"]}`;
 
-        let content= 
-        `
-            <p><b>Nom</b> : ${formObject.name}</p>
-            <p><b>Prénom</b> : ${formObject.surname}</p>
-            <p><b>Email</b> : ${formObject.email}</p>
-            <p><b>Occuption</b> : ${formObject.occupation}</p>
-            <p><b>Avis</b> : ${formObject.message}</p>
-        `;
+        callback.innerText="Envoi en cours...";
 
-        mailData.append("to", "florian.fontanez7@gmail.com");
-        mailData.append("subject", `Avis de ${formObject.surname} ${formObject.name}`);
-        mailData.append("content", content);
+        let res=await sendEmail(formObject, subject);
 
-        sendEmail(mailData);
-    }
-    else{
-        callback.innerText="Veuillez remplir les champs requis.";
-    }
-}
-
-function sendEmail(mailData){
-    callback.innerText="Envoi en cours...";
-
-    fetch("php/email_sender.php", {
-        method: 'POST',
-        body: mailData
-    })
-    .then(response => response.text())
-      .then(data => {
-        if(data=="0"){
+        console.log(res);
+        if(res==0){
             callback.innerText ="Merci pour votre avis !";
         }
         else{
             callback.innerText ="Une erreur est survenue lors de l'envoi de l'avis. Veuillez réessayer plus tard.";
         }
-      })
-    .catch(error => {
-        console.error('Error:', error);
-        callback.innerText ="Une erreur est survenue lors de l'envoi de l'avis. Veuillez réessayer plus tard.";
-    });
+    }
+    else{
+        callback.innerText="Veuillez remplir les champs requis.";
+    }
 }
