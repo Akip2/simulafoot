@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css"> 
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="icon" href="img/icon.png" sizes="32x32">
+
+        <script src="js/default.js"></script>
+
+        <script>
+            markCurrentPage("nos-actualites");
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+        <script id="actu_preview" type="text/x-handlebars-template">
+            <div class="actu_preview">
+                <h3>{{title}}</h3>
+                <p class="actu_date">{{date}}</p>
+                <p>{{prev}}</p>
+
+                <a href={{link}}><i>LIRE PLUS</i></a>
+            </div>
+        </script>
+
+        <title>Nos actualités | Simulafoot</title>
+    </head>
+
+    <body>
+        <div id="header"></div>
+
+        <div id="gradiant_box">
+            <h1>Nos actualités</h1>
+        </div>
+
+        <div id="main_container" class="gray_txt gray_tit high_marginB">
+            <div><h2>Nos dernières actualités :</h2></div>
+
+            <div id="actu_container">
+
+            </div>
+            <div class="default_horizontal_container">
+
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </body>
+</html>
