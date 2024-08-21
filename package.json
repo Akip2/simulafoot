@@ -5,6 +5,6 @@
   },
 
   "scripts" : {
-    "build" : "esbuild js/actu.js --bundle --outfile=js/actu_out.js"
+    "build" : "esbuild js/actu.js --bundle --outfile=js/actu_out.js --format=esm"
   }	
 }
