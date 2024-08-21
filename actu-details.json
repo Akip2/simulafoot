@@ -1,0 +1,29 @@
+[
+    {
+        "title":"Bien installer votre simulafoot",
+        "date": "15 Août 2022",
+        "prev":"Ça y est, vous vous êtes lancé : vous avez commandé un Simulafoot et vous vous posez sans doute la questions la plus...",
+        "link":"actu1.html"
+    },
+
+    {
+        "title":"Pourquoi intégrer Simulafoot à vos événements ?",
+        "date": "14 Juin 2024",
+        "prev":"Vous cherchez une animation originale et captivante pour vos événements ? Ne cherchez plus, le Simulafoot est la...",
+        "link":"actu2.html"
+    },
+
+    {
+        "title":"Comment le Simulafoot Améliore la Cohésion d’Équipe en Entreprise ?",
+        "date": "14 Juin 2024",
+        "prev":"Dans le monde professionnel, la cohésion d'équipe est essentielle pour une productivité et une atmosphère de travail...",
+        "link":"actu3.html"
+    },
+
+    {
+        "title":"Simulafoot au Stade Marcel Picot : Une Animation Inoubliable lors du Match AS Nancy Lorraine – Châteauroux",
+        "date": "14 Juin 2024",
+        "prev":"Le 10 mai dernier, Simulafoot a eu l'honneur de participer à une soirée exceptionnelle en animant le salon VIP du...",
+        "link":"actu4.html"
+    }
+]

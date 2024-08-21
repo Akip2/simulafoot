@@ -8,17 +8,20 @@
 
         <script src="js/default.js"></script>
 
-        <script>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+        <script type="module">
+            import {printAll} from "./js/actu.js";
+            printAll();
+            
             markCurrentPage("nos-actualites");
         </script>
 
-        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-
-        <script id="actu_preview" type="text/x-handlebars-template">
+        <script id="actu-template" type="text/x-handlebars-template">
             <div class="actu_preview">
                 <h3>{{title}}</h3>
-                <p class="actu_date">{{date}}</p>
-                <p>{{prev}}</p>
+                <p>{{date}}</p>
+                <p class="actu_text">{{prev}}</p>
 
                 <a href={{link}}><i>LIRE PLUS</i></a>
             </div>
@@ -35,13 +38,14 @@
         </div>
 
         <div id="main_container" class="gray_txt gray_tit high_marginB">
-            <div><h2>Nos dernières actualités :</h2></div>
-
-            <div id="actu_container">
-
+            <div>
+                <h2>Nos dernières actualités :</h2>
             </div>
-            <div class="default_horizontal_container">
 
+            <div>
+                <div id="actu_container">
+
+                </div>
             </div>
         </div>
 

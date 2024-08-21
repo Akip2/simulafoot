@@ -382,6 +382,17 @@ aside{
             margin-top: 0.5em;
         }
     }
+
+    .actu_vertical_container{
+        ul{
+            padding-left: 2%;
+            list-style: initial;
+
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+    }
 }
 
 #main_container:not(.legal_page) > div{
@@ -542,6 +553,12 @@ figure.picture{
     gap: 0.75em;
 }
 
+.actu_vertical_container{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
 .margin_top{
     margin-top: 18em;
 }
@@ -668,7 +685,7 @@ div.round{
         display: flex;
         flex-direction: column;
 
-        justify-content: space-between;
+        row-gap: 1em;
 
         width: 55%;
         padding-left: 5%;
@@ -942,4 +959,89 @@ button{
         outline: none;
         background-color: rgb(255, 255, 255);
     }
+}
+
+#actu_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes de taille égale */
+    gap: 2em; /* Espacement entre les éléments (facultatif) */
+}
+
+.actu_preview{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+
+    transition: color, filter 0.25s ease-in-out, box-shadow 0.25s;
+
+    border: medium solid rgb(0,85,179); 
+    border-radius: 10px;
+
+    padding: 4%;
+
+    box-shadow: 12px 12px 2px 1px rgb(0,85,179);
+
+    h3{
+        color: rgb(0,85,179);
+        text-transform: uppercase;
+    }
+
+    .actu_text{
+        color:#3A4856;
+        font-weight: 550;
+
+        margin-bottom: 1em;
+    }
+
+    a{
+        transition: color 0.2s;
+        color: rgb(0,85,179);
+        font-weight: 550;
+    }
+
+    a:hover{
+        color: rgb(0, 114, 245);
+    }
+}
+
+.actu_preview:hover{
+    box-shadow: 0px 0px 0px 0px rgb(0,85,179);
+}
+
+#actu_gradiant_box{
+    background-image:
+    linear-gradient( 174deg, #0054b32b 17%, rgba(0,176,137,0.63) 92% ), 
+    url("../img/actu_bg-filtered.jpg"), linear-gradient(174deg, #0055b3 17%, rgba(0, 176, 137, 0.63) 92%); 
+
+    background-size: 100%;
+    background-position: 50% 15%;
+
+    background-attachment: fixed;
+
+    color: white;
+    text-transform: uppercase;
+
+    padding-top: 25%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    text-align: center;
+
+    font-size: large;
+
+    margin-bottom: 12em;
+}
+
+blockquote{
+    border-left: 5px solid rgb(0,85,179);
+    color: rgb(0,85,179);
+
+    padding-left: 2%;
+
+    p{
+        font-size: 1.15em;
+        font-weight: 550;
+    }
+    
 }

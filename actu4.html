@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css"> 
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="icon" href="img/icon.png" sizes="32x32">
+
+        <script src="js/default.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+        <script type="module">
+            import {printAllExcept} from "./js/actu.js";
+            printAllExcept(4);
+        </script>
+
+        <script id="actu-template" type="text/x-handlebars-template">
+            <div class="actu_preview">
+                <h3>{{title}}</h3>
+                <p>{{date}}</p>
+                <p class="actu_text">{{prev}}</p>
+
+                <a href={{link}}><i>LIRE PLUS</i></a>
+            </div>
+        </script>
+
+        <title>Simulafoot au Stade Marcel Picot : Une Animation Inoubliable lors du Match AS Nancy Lorraine – Châteauroux | Simulafoot</title>
+    </head>
+
+    <body>
+        <div id="header"></div>
+
+        <div id="actu_gradiant_box">
+            <h1>Simulafoot au Stade Marcel Picot : Une Animation Inoubliable lors du Match AS Nancy Lorraine – Châteauroux</h1>
+        </div>
+
+        <div id="main_container" class="text_left gray_txt blue_tit high_marginB">
+            <div><div class="actu_vertical_container high_marginB">
+                <p>Le 10 mai dernier, Simulafoot a eu l’honneur de participer à une soirée exceptionnelle en animant le salon VIP du stade Marcel Picot lors du match opposant l’AS Nancy Lorraine à Châteauroux. Cette expérience a permis aux invités de découvrir et d’apprécier notre baby-foot magnétique dans un cadre prestigieux et convivial.</p>
+                <p>Le Simulafoot a attiré l’attention des invités dès leur arrivée. Le concept innovant de baby-foot magnétique a suscité la curiosité et l’enthousiasme de tous. Les invités ont été ravis de pouvoir participer à des matchs endiablés, recréant l’excitation du terrain de football en version miniature</p>
+                <p>La présence de Simulafoot a ajouté une dimension interactive et ludique à l’expérience VIP du match. Non seulement cela a offert aux invités une activité divertissante, mais cela a également encouragé les interactions et les discussions autour de cette nouvelle forme de baby-foot.</p>
+                <p>Nous sommes fiers d’avoir pu offrir une animation de qualité qui a su séduire les invités VIP de l’AS Nancy Lorraine. Nous tenons à remercier le club pour cette opportunité et nous réjouissons de participer à d’autres événements sportifs à l’avenir !</p>
+            </div></div>
+
+            <div class="gray_tit">
+                <h2 class="gray_tit">Autres articles :</h2>
+            </div>
+            
+            <div>
+                <div id="actu_container">
+
+                </div>
+            </div>
+        </div>
+        
+        <div id="footer"></div>
+    </body>
+</html>

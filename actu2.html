@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css"> 
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="icon" href="img/icon.png" sizes="32x32">
+
+        <script src="js/default.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+        <script type="module">
+            import {printAllExcept} from "./js/actu.js";
+            printAllExcept(2);
+        </script>
+
+        <script id="actu-template" type="text/x-handlebars-template">
+            <div class="actu_preview">
+                <h3>{{title}}</h3>
+                <p>{{date}}</p>
+                <p class="actu_text">{{prev}}</p>
+
+                <a href={{link}}><i>LIRE PLUS</i></a>
+            </div>
+        </script>
+
+        <title>Pourquoi intégrer Simulafoot à vos événements ? | Simulafoot</title>
+    </head>
+
+    <body>
+        <div id="header"></div>
+
+        <div id="actu_gradiant_box">
+            <h1>Pourquoi intégrer Simulafoot à vos événements ?</h1>
+        </div>
+
+        <div id="main_container" class="text_left gray_txt blue_tit high_marginB">
+            <div><div class="actu_vertical_container high_marginB">
+                <p>Vous cherchez une animation originale et captivante pour vos événements ? Ne cherchez plus, le Simulafoot est la solution idéale. Voici 4 raisons pour lesquelles vous devriez intégrer le Simulafoot à vos prochains événements.</p>
+
+                <h2>une animation differenciatrice</h2>
+
+                <p>Le Simulafoot propose une expérience de jeu totalement inédite. Son système magnétique unique attire l’attention et suscite la curiosité, garantissant ainsi un fort engagement de la part de vos invités.</p>
+
+                <h2>Convivialité et Interaction</h2>
+
+                <p>Le Simulafoot favorise les interactions et la convivialité entre les participants. Que ce soit lors d’un séminaire, d’un festival ou d’un événement sportif, il crée une ambiance détendue et propice aux échanges.</p>
+
+                <h2>adapté a tous les publics</h2>
+
+                <p>Facile à prendre en main, le Simulafoot convient à tous les âges et à tous les niveaux de compétence. Il est parfait pour des événements familiaux, des team-buildings ou des compétitions amicales.</p>
+
+                <h2>Des souvenirs inoubliables</h2>
+
+                <p>En intégrant le Simulafoot à vos événements, vous offrez à vos invités des moments mémorables. Les participants repartiront avec des souvenirs positifs et parleront de votre événement longtemps après qu’il soit terminé.</p>
+
+                <p>Le Simulafoot est plus qu’un simple jeu, c’est une expérience interactive qui enrichit vos événements. Pour plus d’informations sur nos offres et pour réserver une animation Simulafoot, contactez-nous dès aujourd’hui !</p>
+            </div></div>
+
+            <div class="gray_tit">
+                <h2 class="gray_tit">Autres articles :</h2>
+            </div>
+            
+            <div>
+                <div id="actu_container">
+
+                </div>
+            </div>
+        </div>
+        
+        <div id="footer"></div>
+    </body>
+</html>

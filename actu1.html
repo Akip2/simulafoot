@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css"> 
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="icon" href="img/icon.png" sizes="32x32">
+
+        <script src="js/default.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+        <script type="module">
+            import {printAllExcept} from "./js/actu.js";
+            printAllExcept(1);
+        </script>
+
+        <script id="actu-template" type="text/x-handlebars-template">
+            <div class="actu_preview">
+                <h3>{{title}}</h3>
+                <p>{{date}}</p>
+                <p class="actu_text">{{prev}}</p>
+
+                <a href={{link}}><i>LIRE PLUS</i></a>
+            </div>
+        </script>
+
+        <title>Bien installer votre Simulafoot | Simulafoot</title>
+    </head>
+
+    <body>
+        <div id="header"></div>
+
+        <div id="actu_gradiant_box">
+            <h1>Bien installer votre simulafoot</h1>
+        </div>
+
+        <div id="main_container" class="text_left gray_txt blue_tit high_marginB">
+            <div><div class="actu_vertical_container high_marginB">
+                <p>Ça y est, vous vous êtes lancé : vous avez commandé un Simulafoot et vous vous posez sans doute la questions la plus importante :</p>
+                
+                <blockquote>
+                    <p>où et comment installer mon simulafoot afin de garantir un plaisir de jeu optimal&nbsp;?</p>
+                </blockquote>
+
+                <p>Dans cet article nous allons vous donnez quelques conseils.</p>
+
+                <h2>Choisissez une pièce spacieuse et lumineuse</h2>
+
+                <p>La première étape (et non des moindres) est de choisir le lieu où sera installé votre Simulafoot. Les dimensions d’un Simulafoot étant d’environ un mètre sur soixante-dix centimètres, il vous faut choisir une pièce relativement spacieuse afin de ne pas vous trouver gêné dans vos mouvements. Le sol de la pièce doit, par ailleurs, être tout à fait plat pour garantir une bonne stabilité.</p>
+                <p>De même, veillez à ce que la luminosité soit de bonne qualité afin d’éviter les reflets sur la vitre de plexiglas du Simulafoot. Privilégiez ainsi les pièces ouvertes à la lumière naturelle.</p>
+
+                <h2>Respectez scrupuleusement les instructions du manuel</h2>
+
+                <p>Une fois votre Simulafoot livré, vous trouverez un manuel d’utilisation contenant toutes les instructions pour vous garantir une bonne installation du produit. Veillez à respecter chacune des instructions à la lettre sous peine d’abîmer ou de casser certains éléments. Veillez par exemple à ne pas enlever le ruban adhésif entourant le Simulafoot avant de l’avoir placé sur les tréteaux. Ces mêmes tréteaux devront par la suite être espacés au maximum afin de ne pas « pincer » les tirettes. </p>
+
+                <h2>Prenez soin de votre Simulafoot !</h2>
+
+                <p>Le respect des bonnes conditions d’utilisation est primordial pour maximiser la durée de vie de votre Simulafoot. Il faut par exemple éviter de s’appuyer sur les tirettes ou d’adopter un style de jeu trop « brutal » sous peine de détériorer rapidement la qualité du produit. Au Simulafoot comme dans toute simulation, la finesse est de mise !</p>
+                <p>Enfin, un petit peu coup de chiffon microfibre sur la vitre de plexiglas de temps en temps rendra au Simulafoot tout son éclat et garantira sa place dans votre intérieur !</p>
+            </div></div>
+
+            <div class="gray_tit">
+                <h2 class="gray_tit">Autres articles :</h2>
+            </div>
+            
+            <div>
+                <div id="actu_container">
+
+                </div>
+            </div>
+        </div>
+        
+        <div id="footer"></div>
+    </body>
+</html>
