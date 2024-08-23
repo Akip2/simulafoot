@@ -1,4 +1,4 @@
-const dest="antoinef252@gmail.com";
+const dest="florian.fontanez7@gmail.com";
 const template="table";
 
 export async function sendEmail(data, subject){

@@ -51,7 +51,6 @@ async function submit(event){
 
         let res=await sendEmail(formObject, subject);
 
-        console.log(res);
         if(res==0){
             callback.innerText ="Merci pour votre avis !";
         }

@@ -281,8 +281,18 @@ aside{
     justify-content: center;
 }
 
+#div1{
+    background-image: url("../img/Simulafoot_Banner_HP1.png");
+    background-size: cover;
+
+    background-repeat: no-repeat;
+}
+
 #div1 aside{
+    width: 35%;
     margin-left: 5%;
+
+    min-height: 25vh;
 }
 
 #logo_header{
@@ -1043,5 +1053,4 @@ blockquote{
         font-size: 1.15em;
         font-weight: 550;
     }
-    
 }
