@@ -1,7 +1,7 @@
-const dest="antoinef252@gmail.com";
+const dest="florian.fontanez7@gmail.com";
 const template="table";
 
-export async function sendEmail(data, subject){
+export function sendEmail(data, subject){
     data["_subject"]=`[SIMULAFOOT] ${subject}`;
     data["_template"]=template;
 
