@@ -2,6 +2,8 @@
 
 header{
     width: 100%;
+    min-height: 7vh;
+
     position: fixed;
 	top: 0;
 	left: 0;
@@ -14,8 +16,6 @@ header{
 
     padding-top: 1%;
     padding-bottom: 1%;
-
-    min-height: 8%;
 }
 
 ul{
@@ -37,8 +37,9 @@ em{
 }
 
 #menu_header{
+
     a{
-        font-size: 130%;
+        font-size: 125%;
         text-transform: uppercase;
     }
 }
@@ -46,8 +47,7 @@ em{
 #menu_header ul, #menu_footer ul{
     display: flex;
     flex-direction: row;
-
-    gap:2vw;
+    gap: 2vw;
 }
 
 nav{
