@@ -2,7 +2,6 @@
 
 header{
     width: 100%;
-    min-height: 7vh;
 
     position: fixed;
 	top: 0;
@@ -39,7 +38,7 @@ em{
 #menu_header{
 
     a{
-        font-size: 125%;
+        font-size: 100%;
         text-transform: uppercase;
     }
 }

@@ -1,0 +1,58 @@
+#live-mdl-stats {
+  z-index:999;
+  display: flex;
+  align-items: center;
+}
+
+#live-mdl-stats #live-user {
+  padding: 6px 6px 6px 30px;
+  color: white ;
+  font: 1.1em ;
+  font-weight: bold;
+  text-decoration: none ;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: url(graph.png) no-repeat 6px 5px ;
+  background-size: 20px 20px;
+}
+
+
+#live-mdl-stats:hover .directlive-user, #live-mdl-stats .yesterday-user, #live-mdl-stats .lastmonth-user, #live-mdl-stats .yesterday-connection , #live-mdl-stats .lastmonth-connection {
+  display: block;
+  text-align: left; 
+  background: transparent url(puce.png) no-repeat ;
+  background-position: 0px 3px;
+  padding-left: 20px; 
+  background-size: 0.9em;
+}
+
+#live-mdl-stats #live-user.ishover {
+  background-color: #2a657d;  
+  color: white ;
+  font-weight: normal;
+  padding: 4px 15px 4px 100px;
+  background-size: 90px 90px;
+  background-position: 6px center;
+  margin-top:100px;
+}
+
+#live-mdl-stats .lastupdate {
+	display: block;
+    text-align:right;
+	font: 0.6em "Trebuchet MS",Arial,sans-serif ;
+	color:#78c6c5;
+    font-weight: bold;
+	font-style: italic;
+	width:100%;
+	margin-top:8px;
+}
+
+/* do not display for small screen */
+@media screen and (max-width: 980px) {
+  #live-mdl-stats #live-user {
+    display:none;
+  }
+}
+
+
+
