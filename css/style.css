@@ -798,13 +798,13 @@ div.round{
 
     background-position: 50% 50%;
     padding: 5%;
+    padding-top: 10%;
 
     display: flex;
     flex-direction: column;
+    gap: 2em;
 
     align-items: center;
-
-    height: 65vh;
 
     justify-content: space-around;
 
