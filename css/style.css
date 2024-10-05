@@ -9,11 +9,13 @@ header{
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
     padding-top: 1%;
     padding-bottom: 1%;
+
+    min-height: 8%;
 }
 
 ul{
@@ -35,10 +37,8 @@ em{
 }
 
 #menu_header{
-    margin-right: 8%;
-
     a{
-        font-size: 1vw;
+        font-size: 130%;
         text-transform: uppercase;
     }
 }
@@ -46,7 +46,8 @@ em{
 #menu_header ul, #menu_footer ul{
     display: flex;
     flex-direction: row;
-    gap: 2vw;
+
+    gap:2vw;
 }
 
 nav{
@@ -296,8 +297,7 @@ aside{
 }
 
 #logo_header{
-    margin-left: 8%;
-    width: 250px;
+    width: 300px;
     height: auto; 
     cursor: pointer;
 }
