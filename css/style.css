@@ -13,8 +13,8 @@ header{
     justify-content: space-around;
     align-items: center;
 
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
 ul{
@@ -36,9 +36,8 @@ em{
 }
 
 #menu_header{
-
     a{
-        font-size: 100%;
+        font-size: 110;
         text-transform: uppercase;
     }
 }
@@ -1051,5 +1050,11 @@ blockquote{
     p{
         font-size: 1.15em;
         font-weight: 550;
+    }
+}
+
+@media (max-width: 970px){
+    #menu_header{
+        display:none;
     }
 }
