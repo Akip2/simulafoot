@@ -13,8 +13,8 @@ header{
     justify-content: space-around;
     align-items: center;
 
-    padding-top: 1vh;
-    padding-bottom: 1vh;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
 }
 
 ul{
@@ -102,7 +102,7 @@ footer{
     }
 
     section{
-        width: 50%;
+        max-width: 60%;
         display: flex;
         flex-direction: column;
     
@@ -119,6 +119,9 @@ footer{
 }
 
 #footer_core{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 32px;
 }
 
@@ -302,6 +305,7 @@ aside{
 
 #main_video{
     max-width: 100%;
+    width: 100%;
 }
 
 #main_container{
@@ -310,9 +314,9 @@ aside{
     flex-direction: column;
 
     align-items: center;
-    justify-content: center;
+    justify-content:center;
 
-    gap: 50px;
+    gap: 100px;
 
     #faq_container{
         display: flex;
@@ -478,7 +482,7 @@ figure.picture{
 #event_bottom{
     width: 80%;
     display: flex;
-    flex-direction: row;
+    
 
     p{
         color: #3A4856;
@@ -971,8 +975,8 @@ button{
 
 #actu_container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colonnes de taille égale */
-    gap: 2em; /* Espacement entre les éléments (facultatif) */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
 }
 
 .actu_preview{
@@ -1054,7 +1058,71 @@ blockquote{
 }
 
 @media (max-width: 970px){
+    @media (max-width: 800px) {
+        #main_container:not(.legal_page) > div{
+            width: 92%;
+        }
+
+        #main_container:not(.legal_page) > #event_bottom{
+            align-items: center;
+            width:100%;
+
+            flex-direction: column;
+            gap: 50px;
+
+            div{
+                width: 70%;
+            }
+        }
+
+        @media (max-width: 480px){
+            .no_phone{
+                display: none;
+            }
+        }
+    }
+    
     #menu_header{
         display:none;
+    }
+
+    #main_container:not(.legal_page) > div:not(#event_bottom){
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    #feedback_container{
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    .feedback_box{
+        max-width: 80%;
+        width: 80%;
+    }
+
+    aside{
+        width: 100%;
+    }
+
+    #div1{
+        display: flex;
+        align-items: center;
+        background-image: none;
+
+        aside{
+            width: 80%;
+        }
+    }
+
+    #menu_footer ul{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        list-style:circle;
+    }
+
+    footer img{
+        max-width: 50%;
     }
 }
