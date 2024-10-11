@@ -1068,6 +1068,10 @@ blockquote{
     @media (max-width: 800px) {
         #div1{
             margin-top: -15vh;
+            
+            aside{
+                width: 90%;
+            }
         }
 
         #main_container:not(.legal_page) > div{
@@ -1091,7 +1095,16 @@ blockquote{
             padding-right: 2%    
         }
 
+        header{
+            padding-top: 1vh;
+            padding-bottom: 1vh;
+        }
+
         @media (max-width: 480px){
+            #logo_header{
+                width: 100px;
+            }
+
             .no_phone{
                 display: none;
             }
@@ -1107,8 +1120,22 @@ blockquote{
 
             #div1{
                 margin-top: -5vh;
+
+                aside{
+                    width: 95%;
+                }
+            }
+
+            header{
+                background-color: red;
+                padding-top: 0.5vh;
+                padding-bottom: 0.5vh;
             }
         }
+    }
+
+    #logo_header{
+        width: 250px;
     }
     
     #menu_header{
