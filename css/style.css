@@ -17,6 +17,10 @@ header{
     padding-bottom: 1.5vh;
 }
 
+#header{
+    margin-bottom: 3vh;
+}
+
 ul{
     list-style: none;
 }
@@ -309,7 +313,6 @@ aside{
 }
 
 #main_container{
-    margin-top: -145px;
     display: flex;
     flex-direction: column;
 
@@ -638,7 +641,7 @@ div.round{
     padding-bottom: 1%;
     font-size: large;
 
-    margin-bottom: 12em;
+    margin-bottom: 2em;
 }
 
 #presse_p{
@@ -1057,8 +1060,16 @@ blockquote{
     }
 }
 
+#div1{
+    margin-top: -20vh;
+}
+
 @media (max-width: 970px){
     @media (max-width: 800px) {
+        #div1{
+            margin-top: -15vh;
+        }
+
         #main_container:not(.legal_page) > div{
             width: 92%;
         }
@@ -1087,11 +1098,15 @@ blockquote{
 
             footer{
                 padding-left: 1%;
-                padding-right: 1%  
-                
-                img{
-                    display:none;
+                padding-right: 1%;
+
+                section{
+                    max-width: 100%;
                 }
+            }
+
+            #div1{
+                margin-top: -5vh;
             }
         }
     }
