@@ -1075,9 +1075,23 @@ blockquote{
             }
         }
 
+        footer{
+            padding-left: 2%;
+            padding-right: 2%    
+        }
+
         @media (max-width: 480px){
             .no_phone{
                 display: none;
+            }
+
+            footer{
+                padding-left: 1%;
+                padding-right: 1%  
+                
+                img{
+                    display:none;
+                }
             }
         }
     }
@@ -1122,7 +1136,8 @@ blockquote{
         list-style:circle;
     }
 
-    footer img{
-        max-width: 50%;
+    footer{
+        padding-left: 5%;
+        padding-right: 5%    
     }
 }
