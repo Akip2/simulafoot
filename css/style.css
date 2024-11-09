@@ -1088,6 +1088,32 @@ blockquote{
             div{
                 width: 70%;
             }
+
+            h1{
+                font-size: 2em;
+            }
+
+            h2{
+                font-size: 1.5em;
+            }
+        }
+
+        h1{
+            font-size: 2em;
+        }
+
+        h2{
+            font-size: 1.5em;
+        }
+
+        #feedback{
+            h1{
+                font-size: 2em;
+            }
+
+            h2{
+                font-size: 1.5em;
+            }
         }
 
         footer{
@@ -1101,6 +1127,34 @@ blockquote{
         }
 
         @media (max-width: 480px){
+            #feedback{
+                h1{
+                    font-size: 1.5em;
+                }
+
+                h2{
+                    font-size: 1em;
+                }
+            }
+
+            #event_bottom{
+                h1{
+                    font-size: 1.5em;
+                }
+
+                h2{
+                    font-size: 1em;
+                }
+            }
+
+            h1{
+                font-size: 1.5em;
+            }
+
+            h2{
+                font-size: 1em;
+            }
+
             #logo_header{
                 width: 100px;
             }
@@ -1122,7 +1176,8 @@ blockquote{
                 margin-top: -5vh;
 
                 aside{
-                    width: 95%;
+                    margin-left: 0%;
+                    width: 99%;
                 }
             }
 
